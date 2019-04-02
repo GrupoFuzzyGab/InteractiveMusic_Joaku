@@ -16,7 +16,6 @@
  https://code.google.com/archive/p/simple-openni/
  
  En windows:
- 
  Kinect SDK
  https://www.microsoft.com/en-us/download/details.aspx?id=40278
  
@@ -26,7 +25,6 @@
  En MAC: no hace falta instalar ningun driver.
  Si no funciona ir a este sitio y bajar instrucciones:
  https://github.com/processing/processing/issues/2201
- 
  https://github.com/kronihias/head-pose-estimation
  
  ///////////////////////////////////////////////////                                                                                                                                                                                                      
@@ -41,7 +39,6 @@
  */
 
 import controlP5.*;
-
 
 ControlP5 cp5;
 
@@ -87,7 +84,6 @@ int estado = 0;
 boolean foto = false;
 
 int fmr = 0;
-
 
 /// variables para el perlin noise
 
@@ -355,8 +351,6 @@ void draw() {
       PVector currentPoint = depthPoint[i];
 
       if (currentPoint.z < profundidad && currentPoint.z > 80) {
-
-
         // draw the projected point
         if (userMap[index] == 0)
         {
