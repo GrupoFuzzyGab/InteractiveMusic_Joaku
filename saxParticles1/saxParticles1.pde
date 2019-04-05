@@ -105,7 +105,7 @@ boolean      autoCalib=true;
 PVector      com = new PVector();                                   
 PVector      com2d = new PVector();                                   
 color[]      userClr = new color[] { 
-  color(255, 0, 0), 
+  color(255, 255, 255), 
   color(0, 255, 0), 
   color(0, 0, 255), 
   color(255, 255, 0), 
@@ -118,7 +118,7 @@ void setup() {
 
   //frameRate(24);
   fullScreen(P3D);
- //size(1024, 768, P3D);
+  //size(1024, 768, P3D);
 
   // pushMatrix();
 
@@ -168,7 +168,7 @@ void setup() {
     .setRadius(30)
     .setDragDirection(Knob.VERTICAL)
     ;
-    
+
   myKnobRot = cp5.addKnob("knobRot")
     .setRange(-0.3, 0.3)
     .setValue(0)
@@ -221,7 +221,7 @@ void draw() {
   background(0);
 
   pushMatrix();
-  
+
   translate(width/2, height/2, 0);
 
 
